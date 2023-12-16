@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_TagAccess"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/chk_access_ant1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Ant-1" />
+
+        <CheckBox
+            android:id="@+id/chk_access_ant2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Ant-2" />
+
+        <CheckBox
+            android:id="@+id/chk_access_ant3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Ant-3" />
+
+        <CheckBox
+            android:id="@+id/chk_access_ant4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Ant-4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="35dip"
+            android:gravity="center_vertical|left"
+            android:text="EPCs:" />
+
+        <Spinner
+            android:id="@+id/sp_access_epc_list"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_access_inventory"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_margin="5dip"
+        android:text="Inventory" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="35dip"
+            android:gravity="center_vertical|left"
+            android:text="Memory Bank:" />
+
+        <Spinner
+            android:id="@+id/sp_access_memory_bank"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="35dip"
+            android:gravity="center_vertical|left"
+            android:text="Word Start:" />
+
+        <Spinner
+            android:id="@+id/sp_access_word_start"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="35dip"
+            android:gravity="center_vertical|left"
+            android:text="Word Count:" />
+
+        <Spinner
+            android:id="@+id/sp_access_word_count"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="35dip"
+            android:gravity="center_vertical|left"
+            android:text="Access PWB:" />
+
+        <EditText
+            android:id="@+id/ed_access_access_pwb"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:digits="0123456789abcdefABCDEF"
+            android:inputType="text"
+            android:text="00000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="35dip"
+            android:gravity="center_vertical|left"
+            android:text="Data(Hex):" />
+
+        <EditText
+            android:id="@+id/ed_access_data"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:digits="0123456789abcdefABCDEF"
+            android:inputType="text" 
+            android:text="0000"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_access_write"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_margin="5dip"
+        android:text="Write" />
+    
+    <Button
+        android:id="@+id/btn_access_read"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_margin="5dip"
+        android:text="Read" />
+
+</LinearLayout>

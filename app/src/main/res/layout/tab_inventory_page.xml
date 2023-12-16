@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_inventory"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/chk_inv_ant1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Ant-1" />
+
+        <CheckBox
+            android:id="@+id/chk_inv_ant2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Ant-2" />
+        
+          <CheckBox
+            android:id="@+id/chk_inv_ant3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Ant-3" />
+
+        <CheckBox
+            android:id="@+id/chk_inv_ant4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Ant-4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/chk_inv_ant5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Ant-5" />
+
+        <CheckBox
+            android:id="@+id/chk_inv_ant6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Ant-6" />
+
+        <CheckBox
+            android:id="@+id/chk_inv_ant7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Ant-7" />
+
+        <CheckBox
+            android:id="@+id/chk_inv_ant8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Ant-8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/chk_inv_ant9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Ant-9" />
+
+        <CheckBox
+            android:id="@+id/chk_inv_ant10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Ant-10" />
+
+        <CheckBox
+            android:id="@+id/chk_inv_ant11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Ant-11" />
+
+        <CheckBox
+            android:id="@+id/chk_inv_ant12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Ant-12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/chk_inv_ant13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Ant-13" />
+
+        <CheckBox
+            android:id="@+id/chk_inv_ant14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Ant-14" />
+
+        <CheckBox
+            android:id="@+id/chk_inv_ant15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Ant-15" />
+
+        <CheckBox
+            android:id="@+id/chk_inv_ant16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Ant-16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_startInventory"
+            style="?android:attr/absListViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Start"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_stopInventory"
+            style="?android:attr/absListViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Stop"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_clearInventoryList"
+            style="?android:attr/absListViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Clear List"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_inventory"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_inventoryInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Tag count:0  Loop:0"
+            android:textColor="#0000FF"
+            android:textSize="15sp" />
+
+        <include
+            android:id="@+id/inventorylist_title"
+            layout="@xml/inventorylist_tittle" />
+
+        <ListView
+            android:id="@+id/list_inventory_record"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/list_bg"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#f9b68b"
+            android:dividerHeight="1.0dp"
+            android:fadingEdge="none"
+            android:scrollbars="vertical" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

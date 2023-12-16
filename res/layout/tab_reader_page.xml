@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_reader"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#e0e0e0" >
+
+            <TextView
+                android:id="@+id/tv_devType"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="Device:" />
+
+            <Spinner
+                android:id="@+id/sn_devType"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_toRightOf="@id/tv_devType"
+                android:entries="@array/deviveList" />
+
+            <TextView
+                android:id="@+id/tv_commType"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@id/tv_devType"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="Commuication" />
+
+            <Spinner
+                android:id="@+id/sn_commType"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_alignTop="@id/tv_commType"
+                android:layout_toRightOf="@id/tv_commType"
+                android:entries="@array/commList" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/group_bluetooth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#e0e0e0"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="Bluetooth" />
+
+            <Spinner
+                android:id="@+id/sn_blueName"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/group_net"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#e0e0e0" >
+
+            <TextView
+                android:id="@+id/tv_ipAddr"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="IP:" />
+
+            <EditText
+                android:id="@+id/ed_ipAddr"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_toRightOf="@id/tv_ipAddr"
+                android:digits="0123456789."
+                android:inputType="text"
+                android:text="192.168.0.222" />
+
+            <TextView
+                android:id="@+id/tv_port"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@id/tv_ipAddr"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="Port:" />
+
+            <EditText
+                android:id="@+id/ed_port"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_alignTop="@id/tv_port"
+                android:layout_toRightOf="@id/tv_port"
+                android:inputType="number"
+                android:text="4800" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/group_com"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#e0e0e0" >
+
+            <TextView
+                android:id="@+id/tv_comPath"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="COM:" />
+
+            <Spinner
+                android:id="@+id/sn_comName"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_alignTop="@id/tv_comPath"
+                android:layout_toRightOf="@id/tv_comPath" />
+
+            <TextView
+                android:id="@+id/tv_comBaud"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@id/tv_comPath"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="Baud:" />
+
+            <Spinner
+                android:id="@+id/sn_comBaud"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_alignTop="@id/tv_comBaud"
+                android:layout_toRightOf="@id/tv_comBaud"
+                android:entries="@array/baudList" />
+
+            <TextView
+                android:id="@+id/tv_comFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@id/tv_comBaud"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="Frame:" />
+
+            <Spinner
+                android:id="@+id/sn_comFrame"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_alignTop="@id/tv_comFrame"
+                android:layout_toRightOf="@id/tv_comFrame"
+                android:entries="@array/frameList" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_connect"
+                style="?android:attr/absListViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Connect" />
+
+            <Button
+                android:id="@+id/btn_disconnect"
+                style="?android:attr/absListViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Disconnect" />
+
+            <Button
+                android:id="@+id/btn_infor"
+                style="?android:attr/absListViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Information" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

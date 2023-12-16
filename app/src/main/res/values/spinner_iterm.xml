@@ -1,0 +1,55 @@
+<resources>
+
+    <string-array name="commList">
+        <item>Bluetooth</item>
+        <item>COM</item>
+        <item>NET</item>
+        <item>USB</item>
+        <item>USB Serial Converter</item>
+    </string-array>
+    <string-array name="deviveList">
+        <item>UM200</item>
+        <item>M60</item>
+        <item>UR-PAN</item>
+        <item>K71V1</item>
+    </string-array>
+    <string-array name="baudList">
+        <item>9600</item>
+        <item>38400</item>
+        <item>115200</item>
+    </string-array>
+    <string-array name="frameList">
+        <item>8E1</item>
+        <item>8O1</item>
+        <item>8N1</item>
+    </string-array>
+    <string-array name="targetList">
+        <item>00:Inventoried(S0)</item>
+        <item>01:Inventoried(S1)</item>
+        <item>02:Inventoried(S2)</item>
+        <item>03:Inventoried(S3)</item>
+        <item>04:SL</item>
+    </string-array>
+    <string-array name="actiontList">
+        <item>00:assert SL or inventoried → A deassert SL or inventoried → B</item>
+        <item>01:assert SL or inventoried → A do nothing</item>
+        <item>02:do nothing deassert SL or inventoried → B</item>
+        <item>03:negate SL or (A → B,B → A)do nothing</item>
+        <item>04:deassert SL or inventoried → B assert SL or inventoried → A</item>
+        <item>05:deassert SL or inventoried → B do nothing</item>
+        <item>06:do nothing assert SL or inventoried → A</item>
+        <item>07: do nothing negate SL or (A → B, B → A)</item>
+    </string-array>
+    <string-array name="memoryBankList">
+        <item>00:RFU</item>
+        <item>01:EPC</item>
+        <item>02:TID</item>
+        <item>03:User</item>
+    </string-array>
+    <string-array name="embeddedCmdLockItemList">
+        <item>00:writeable from either the open or secured states</item>
+        <item>01:permanently writeable from either the open or secured states and may never be locked</item>
+        <item>02:writeable from the secured state but not from the open state</item>
+        <item>03:not writeable from any state</item>
+    </string-array>
+</resources>
